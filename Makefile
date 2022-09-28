@@ -13,5 +13,8 @@ brain-games:
 build:
 	poetry build
 
+lint:
+	poetry run flake8 brain_games
+
 
 
