@@ -19,14 +19,17 @@ def main():
         randb = randint(0, 99)
         print('Question:', randa, pznak, randb)
         number = prompt.string('Your answer: ')
-        number = int(number)
-        if (pznak == '+' and (randa + randb == number)):
+        if number.isnumeric() == False:
+            print('Некорректный ввод')
+            break
+
+        if (pznak == '+' and (randa + randb == int(number))):
             print('Correct!')
             n += 1
-        elif (pznak == '-' and (randa - randb == number)):
+        elif (pznak == '-' and (randa - randb == int(number))):
             n += 1
             print('Correct!')
-        elif (pznak == '*' and (randa * randb == number)):
+        elif (pznak == '*' and (randa * randb == int(number))):
             n += 1
             print('Correct!')
         else:
