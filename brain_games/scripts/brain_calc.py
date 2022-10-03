@@ -1,12 +1,11 @@
 from random import randint
+from welcome import welcome, noCorrect
 import prompt
 import random
 
 
 def main():
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!')
+    name = welcome()
     print('What is the result of the expression?')
     n = 0
     znak = '+-*'
@@ -34,11 +33,11 @@ def main():
             print('Correct!')
         else:
             if (pznak == "+"):
-                print(f"'{number}' is wrong answer ;(. Correct answer was '{randa + randb}'.")
+                noCorrect(number, randa + randb)
             elif (pznak == "-"):
-                print(f"'{number}' is wrong answer ;(. Correct answer was '{randa - randb}'.")
+                noCorrect(number, randa - randb)
             elif (pznak == "*"):
-                print(f"'{number}' is wrong answer ;(. Correct answer was '{randa * randb}'.")
+                noCorrect(number, randa * randb)
             else:
                 print('Некорректный ввод')
             break

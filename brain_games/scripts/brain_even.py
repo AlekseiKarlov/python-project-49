@@ -1,11 +1,10 @@
 from random import randint
+from welcome import welcome, noCorrect
 import prompt
 
 
 def main():
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!')
+    name = welcome()
     print('Answer "yes" if the number is even, otherwise answer "no".')
     n = 0
     while (n < 4):
@@ -23,9 +22,9 @@ def main():
             print('Correct!')
         else:
             if (number == "yes"):
-                print(f"'{number}' is wrong answer ;(. Correct answer was 'no'.")
+                noCorrect(number, 'no')
             elif (number == "no"):
-                print(f"'{number}' is wrong answer ;(. Correct answer was 'yes'.")
+                noCorrect(number, 'yes')
             else:
                 print('Некорректный ввод')
             break
