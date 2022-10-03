@@ -1,5 +1,5 @@
 from random import randint
-from welcome import welcome, noCorrect
+from .welcome import welcome, noCorrect
 import prompt
 
 
@@ -22,7 +22,6 @@ def main():
         randb = randint(0, 99)
         print('Question:', randa, randb)
         otwet = gcd_fun(randa, randb)
-        print(otwet)
         number = prompt.string('Your answer: ')
 
         if number.isnumeric() == False:
