@@ -18,7 +18,7 @@ def main():
         randb = randint(0, 99)
         print('Question:', randa, pznak, randb)
         number = prompt.string('Your answer: ')
-        if number.isnumeric() == False:
+        if number.isnumeric() is False:
             print('Некорректный ввод')
             break
 
@@ -41,7 +41,6 @@ def main():
             else:
                 print('Некорректный ввод')
             break
-
 
 
 if __name__ == '__main__':

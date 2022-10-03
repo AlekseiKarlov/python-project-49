@@ -24,6 +24,9 @@ build:
 
 lint:
 	poetry run flake8 brain_games
+	poetry run flake8 brain-even
+	poetry run flake8 brain-calc
+	poetry run flake8 brain_gcd
 
 
 

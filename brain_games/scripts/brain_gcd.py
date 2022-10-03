@@ -4,7 +4,7 @@ import prompt
 
 
 def gcd_fun(x, y):
-    if(y == 0):
+    if (y == 0):
         return x
     else:
         return gcd_fun(y, x % y)
@@ -24,7 +24,7 @@ def main():
         otwet = gcd_fun(randa, randb)
         number = prompt.string('Your answer: ')
 
-        if number.isnumeric() == False:
+        if number.isnumeric() is False:
             print('Некорректный ввод')
             break
 
