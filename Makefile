@@ -16,7 +16,7 @@ brain-even:
 brain-calc:
 	poetry run brain-calc
 
-brain_gcd:
+brain-gcd:
 	poetry run brain_gcd
 
 brain_prime:
