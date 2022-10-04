@@ -1,4 +1,4 @@
-from .welcome import welcome, noCorrect, arithmeticProgression
+from brain_games.cli import welcome, noCorrect, arithmeticProgression
 import prompt
 
 

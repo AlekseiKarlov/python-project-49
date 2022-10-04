@@ -1,5 +1,5 @@
 from random import randint
-from .welcome import welcome, noCorrect
+from brain_games.cli import welcome, noCorrect
 import prompt
 
 

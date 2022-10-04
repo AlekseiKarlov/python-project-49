@@ -1,5 +1,5 @@
 from random import randint
-from welcome import welcome, noCorrect, prostoe
+from brain_games.cli import welcome, prostoe, noCorrect
 import prompt
 
 
@@ -14,7 +14,6 @@ def main():
         randa = randint(1, 99)
         print('Question:', randa)
         otwet = prostoe(randa)
-        print(otwet)
         number = prompt.string('Your answer: ')
         if (otwet == 'yes' and number == 'yes'):
             print('Correct!')
