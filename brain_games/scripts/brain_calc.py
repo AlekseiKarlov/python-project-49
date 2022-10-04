@@ -19,8 +19,19 @@ def main():
         print('Question:', randa, pznak, randb)
         number = prompt.string('Your answer: ')
         if number.isnumeric() is False:
-            print('Некорректный ввод')
+            if (pznak == "+"):
+                noCorrect(number, randa + randb, name)
+                break
+            elif (pznak == "-"):
+                noCorrect(number, randa - randb, name)
+                break
+            elif (pznak == "*"):
+                noCorrect(number, randa * randb, name)
+                break
+            else:
+                print('Некорректный ввод')
             break
+
 
         if (pznak == '+' and (randa + randb == int(number))):
             print('Correct!')
