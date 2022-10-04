@@ -14,8 +14,9 @@ def welcome():
     return name
 
 
-def noCorrect(a, b):
+def noCorrect(a, b, name):
     print(f"'{a}' is wrong answer ;(. Correct answer was '{b}'.")
+    print(f"Let's try again, {name}!")
 
 
 def arithmeticProgression():

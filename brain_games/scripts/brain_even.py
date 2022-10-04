@@ -22,9 +22,9 @@ def main():
             print('Correct!')
         else:
             if (number == "yes"):
-                noCorrect(number, 'no')
+                noCorrect(number, 'no', name)
             elif (number == "no"):
-                noCorrect(number, 'yes')
+                noCorrect(number, 'yes', name)
             else:
                 print('Некорректный ввод')
             break

@@ -32,7 +32,7 @@ def main():
             print('Correct!')
             n += 1
         else:
-            noCorrect(number, otwet)
+            noCorrect(number, otwet, name)
             break
 
 

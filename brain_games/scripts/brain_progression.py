@@ -20,7 +20,7 @@ def main():
             print('Correct!')
             n += 1
         else:
-            noCorrect(number, d)
+            noCorrect(number, d, name)
             break
 
 

@@ -33,11 +33,11 @@ def main():
             print('Correct!')
         else:
             if (pznak == "+"):
-                noCorrect(number, randa + randb)
+                noCorrect(number, randa + randb, name)
             elif (pznak == "-"):
-                noCorrect(number, randa - randb)
+                noCorrect(number, randa - randb, name)
             elif (pznak == "*"):
-                noCorrect(number, randa * randb)
+                noCorrect(number, randa * randb, name)
             else:
                 print('Некорректный ввод')
             break
