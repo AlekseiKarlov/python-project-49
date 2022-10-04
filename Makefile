@@ -19,6 +19,9 @@ brain-calc:
 brain_gcd:
 	poetry run brain_gcd
 
+brain_progression:
+	poetry run brain_progression
+
 build:
 	poetry build
 
@@ -27,6 +30,7 @@ lint:
 	poetry run flake8 brain-even
 	poetry run flake8 brain-calc
 	poetry run flake8 brain_gcd
+	poetry run flake8 brain_progression
 
 
 
