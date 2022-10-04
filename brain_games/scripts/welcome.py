@@ -33,3 +33,18 @@ def arithmeticProgression():
             i += 1
     print('Question:', otwet.strip())
     return d
+
+
+def prostoe(d):
+    n = 1
+    count = 0
+    while (n <= d):
+        if (d % n == 0):
+            count += 1
+            n += 1
+        else:
+            n += 1
+    if (count == 2):
+        return 'yes'
+    else:
+        return 'no'
